@@ -121,7 +121,7 @@ export const About: React.FC = () => {
                                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mt-3 text-[14.5px] pl-[24px]">
                                     <li><strong className="text-gray-900 dark:text-white">HTML5, CSS3 y SCSS:</strong> para la maquetación y estilos.</li>
                                     <li><strong className="text-gray-900 dark:text-white">JavaScript y jQuery:</strong> para la lógica de interacción y dinamismo.</li>
-                                    <li><strong className="text-gray-900 dark:text-white">React:</strong> para el desarrollo de interfaces modernas y escalables.</li>
+                                    <li><strong className="text-gray-900 dark:text-white">React:</strong> conocimientos básicos aplicados al desarrollo de interfaces.</li>
                                     <li><strong className="text-gray-900 dark:text-white">Twig y PHP:</strong> en entornos con plantillas y backends personalizados.</li>
                                     <li><strong className="text-gray-900 dark:text-white">Git y GitHub:</strong> para control de versiones, tanto en terminal como en interfaz gráfica.</li>
                                     <li><strong className="text-gray-900 dark:text-white">Figma:</strong> en modo desarrollador para trasladar diseños a código de manera precisa.</li>
@@ -129,7 +129,7 @@ export const About: React.FC = () => {
 
                             </p>
                             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-3">
-                                También he trabajado con MySQL para la gestión de bases de datos, Google Apps Script para automatizaciones y con metodologías de diseño responsivo enfocadas en la experiencia de usuario.
+                                Actualmente estoy aprendiendo backend con Node.js en Talento Tech y reforzando conocimientos básicos de SQLite y Supabase. También practico desarrollo asistido por IA mediante Cursor, ChatGPT y agentes aplicados a tareas de programación, siempre revisando y validando el resultado.
                             </p>
                             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-3">
                                 Me considero una persona autodidacta, detallista y orientada a soluciones, con la capacidad de crear aplicaciones y páginas web que aporten valor real a las empresas, optimizando procesos y generando impacto positivo en sus ingresos.

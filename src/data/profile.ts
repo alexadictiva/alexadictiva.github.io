@@ -49,7 +49,7 @@ export const profile: Profile = {
     role: "Frontend Developer",
     avatar: "/portfolio_new_edition/images/me.jpg",
     about: "Soy desarrolladora frontend con más de 4 años de experiencia en aplicaciones SaaS, apasionada por crear interfaces limpias, escalables y centradas en la experiencia de usuario.",
-    email: "alexadictiva@gmail.com",
+    email: "l.alexandradev@gmail.com",
     linkedin: "https://www.linkedin.com/in/libiaaperezbdev1/",
     github: "https://github.com/alexadictiva",
 
@@ -60,13 +60,22 @@ export const profile: Profile = {
         { name: "jQuery", category: "frontend", level: "advanced" },
         { name: "Git / GitHub", category: "tools", level: "advanced" },
         { name: "Figma (Dev Mode)", category: "tools", level: "advanced" },
-        { name: "React", category: "frontend", level: "beginner" },
+        { name: "React (básico)", category: "frontend", level: "beginner" },
         { name: "TypeScript", category: "languages", level: "beginner" },
         { name: "TailwindCSS", category: "frontend", level: "beginner" },
-        { name: "NodeJs (básico)", category: "backend", level: "beginner" },
+        { name: "Node.js (básico)", category: "backend", level: "beginner" },
+        { name: "SQLite (básico)", category: "backend", level: "beginner" },
+        { name: "Supabase (básico)", category: "backend", level: "beginner" },
+        { name: "Desarrollo asistido por IA", category: "tools", level: "beginner" },
     ],
 
     education: [
+        {
+            degree: "Curso de Backend con Node.js",
+            institution: "Talento Tech - Ciudad de Buenos Aires",
+            year: "2026 - En curso",
+            description: "Formación en Node.js y Express.js, APIs REST, protocolo HTTP, JSON, Postman, Firebase, autenticación con JWT, middlewares y manejo de errores."
+        },
         {
             degree: "Técnico en Programación y Desarrollo Web",
             institution: "Instituto Metropolitano de Altos Estudios ALPI (EMAE)",
@@ -372,9 +381,9 @@ export const profile: Profile = {
             title: "Landing Wetrex con Google Sheets",
             description: "Landing de pauta comercial para Wetrex con formulario conectado a Google Sheets como base de datos",
             image: "/portfolio_new_edition/images/project-wetrex.png",
-            stack: ["HTML", "CSS", "JavaScript", "Google Apps Script"],
+            stack: ["HTML", "CSS", "JavaScript"],
             demoUrl: "https://ecomm-app.com/landing/wetrex.html",
-            achievements: ["Integración con Google Sheets", "Formularios dinámicos", "Automatización de datos"]
+            achievements: ["Integración con Google Sheets", "Formularios dinámicos", "Diseño responsive"]
         },
         {
             id: "ecommapp-website",
