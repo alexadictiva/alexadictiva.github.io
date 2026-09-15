@@ -2,20 +2,21 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ThemeToggle } from './ThemeToggle';
-
-const navItems = [
-    { path: '/', label: 'Inicio' },
-    { path: '/sobre-mi', label: 'Sobre mí' },
-    { path: '/habilidades', label: 'Habilidades' },
-    { path: '/educacion', label: 'Educación' },
-    { path: '/certificados', label: 'Certificados' },
-    { path: '/proyectos', label: 'Proyectos' },
-    { path: '/contacto', label: 'Contacto' },
-];
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const TopNav: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const location = useLocation();
+    const { t } = useLanguage();
+    const navItems = [
+        { path: '/', label: t('nav.home') },
+        { path: '/sobre-mi', label: t('nav.about') },
+        { path: '/habilidades', label: t('nav.skills') },
+        { path: '/educacion', label: t('nav.education') },
+        { path: '/certificados', label: t('nav.certificates') },
+        { path: '/proyectos', label: t('nav.projects') },
+        { path: '/contacto', label: t('nav.contact') },
+    ];
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -75,7 +76,7 @@ export const TopNav: React.FC = () => {
                         <button
                             onClick={toggleMenu}
                             className="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
-                            aria-label="Abrir menú de navegación"
+                            aria-label={t('nav.openMenu')}
                         >
                             <svg
                                 className="w-6 h-6 text-gray-700 dark:text-gray-300"

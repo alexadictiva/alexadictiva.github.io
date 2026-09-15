@@ -2,8 +2,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Avatar } from '../components/Avatar';
 import { profile } from '../data/profile';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const Home: React.FC = () => {
+    const { t, translateContent } = useLanguage();
     const mainSkills = profile.skills.slice(0, 5);
 
     return (
@@ -23,7 +25,7 @@ export const Home: React.FC = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4"
                         >
-                            Hola, soy{' '}
+                            {t('home.greeting')}{' '}
                             <span className="text-accent">{profile.name}</span>
                         </motion.h1>
 
@@ -33,7 +35,7 @@ export const Home: React.FC = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="text-2xl sm:text-3xl text-gray-600 dark:text-gray-300 mb-6"
                         >
-                            {profile.role}
+                            {translateContent(profile.role)}
                         </motion.h2>
 
                         <motion.p
@@ -42,7 +44,7 @@ export const Home: React.FC = () => {
                             transition={{ duration: 0.8, delay: 0.6 }}
                             className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0"
                         >
-                            {profile.about}
+                            {translateContent(profile.about)}
                         </motion.p>
 
                         {/* Main Skills */}
@@ -60,7 +62,7 @@ export const Home: React.FC = () => {
                                     transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
                                     className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium"
                                 >
-                                    {skill.name}
+                                    {translateContent(skill.name)}
                                 </motion.span>
                             ))}
                         </motion.div>
@@ -78,7 +80,7 @@ export const Home: React.FC = () => {
                                     whileTap={{ scale: 0.95 }}
                                     className="px-8 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition-colors duration-200"
                                 >
-                                    Ver proyectos
+                                    {t('home.viewProjects')}
                                 </motion.button>
                             </Link>
 
@@ -90,7 +92,7 @@ export const Home: React.FC = () => {
                                 whileTap={{ scale: 0.95 }}
                                 className="px-8 py-3 border-2 border-accent text-accent rounded-lg font-semibold hover:bg-accent hover:text-white transition-colors duration-200"
                             >
-                                Abrir LinkedIn
+                                {t('home.openLinkedIn')}
                             </motion.a>
                         </motion.div>
                     </motion.div>

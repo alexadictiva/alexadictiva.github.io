@@ -1,7 +1,7 @@
 export interface Skill {
     name: string;
-    category: 'frontend' | 'backend' | 'tools' | 'languages';
-    level: 'beginner' | 'intermediate' | 'advanced' | 'expert';
+    category: 'frontend' | 'backend' | 'tools' | 'competencies';
+    level?: 'basic' | 'learning' | 'basicLearning' | 'basicIntermediate' | 'intermediate' | 'intermediateAdvanced' | 'advanced';
 }
 
 export interface Education {
@@ -46,7 +46,7 @@ export interface Profile {
 
 export const profile: Profile = {
     name: "L. Alexandra Pérez",
-    role: "Frontend Developer",
+    role: "Desarrolladora frontend",
     avatar: "/portfolio_new_edition/images/me.jpg",
     about: "Soy desarrolladora frontend con más de 4 años de experiencia en aplicaciones SaaS, apasionada por crear interfaces limpias, escalables y centradas en la experiencia de usuario.",
     email: "l.alexandradev@gmail.com",
@@ -54,19 +54,39 @@ export const profile: Profile = {
     github: "https://github.com/alexadictiva",
 
     skills: [
-        { name: "JavaScript", category: "languages", level: "advanced" },
+        { name: "JavaScript", category: "frontend", level: "advanced" },
         { name: "HTML5", category: "frontend", level: "advanced" },
         { name: "CSS3 / SCSS", category: "frontend", level: "advanced" },
-        { name: "Git / GitHub", category: "tools", level: "advanced" },
-        { name: "React", category: "frontend", level: "beginner" },
-        { name: "TypeScript", category: "languages", level: "beginner" },
-        { name: "TailwindCSS", category: "frontend", level: "beginner" },
-        { name: "Node.js (en curso)", category: "backend", level: "beginner" },
-        { name: "SQLite", category: "backend", level: "beginner" },
-        { name: "Supabase", category: "backend", level: "beginner" },
-        { name: "Desarrollo asistido por IA", category: "tools", level: "intermediate" },
-        { name: "Figma (Dev Mode)", category: "tools", level: "advanced" },
         { name: "jQuery", category: "frontend", level: "advanced" },
+        { name: "React", category: "frontend", level: "intermediate" },
+        { name: "TypeScript", category: "frontend", level: "basic" },
+        { name: "Tailwind CSS", category: "frontend", level: "basicIntermediate" },
+        { name: "Bootstrap", category: "frontend", level: "intermediateAdvanced" },
+        { name: "Node.js", category: "backend", level: "learning" },
+        { name: "PHP", category: "backend", level: "basicIntermediate" },
+        { name: "CodeIgniter", category: "backend", level: "basicIntermediate" },
+        { name: "SQL", category: "backend", level: "basic" },
+        { name: "PostgreSQL", category: "backend", level: "basicLearning" },
+        { name: "SQLite", category: "backend", level: "basic" },
+        { name: "Supabase", category: "backend", level: "basic" },
+        { name: "APIs REST / JSON", category: "backend", level: "intermediateAdvanced" },
+        { name: "Git / GitHub", category: "tools", level: "intermediate" },
+        { name: "Vite", category: "tools", level: "intermediate" },
+        { name: "Postman", category: "tools", level: "intermediate" },
+        { name: "Chrome DevTools", category: "tools", level: "advanced" },
+        { name: "Figma (modo desarrollador)", category: "tools", level: "intermediate" },
+        { name: "Vercel / Render", category: "tools", level: "basic" },
+        { name: "Cursor / OpenAI Codex", category: "tools", level: "intermediate" },
+        { name: "Diseño responsivo", category: "competencies" },
+        { name: "Componentes reutilizables", category: "competencies" },
+        { name: "Integración de APIs", category: "competencies" },
+        { name: "Migración de aplicaciones heredadas", category: "competencies" },
+        { name: "Depuración", category: "competencies" },
+        { name: "Accesibilidad web", category: "competencies" },
+        { name: "Rendimiento web", category: "competencies" },
+        { name: "Compatibilidad entre navegadores", category: "competencies" },
+        { name: "Validación funcional y trabajo con QA", category: "competencies" },
+        { name: "Scrum / metodologías ágiles", category: "competencies" },
     ],
 
     education: [
@@ -104,6 +124,12 @@ export const profile: Profile = {
             "link": "https://platzi.com/p/alexadictiva/curso/12544-course/diploma/detalle/"
         },
         {
+            "name": "Curso de TypeScript",
+            "issuer": "Platzi",
+            "date": "2025",
+            "link": "https://platzi.com/p/alexadictiva/curso/2878-course/diploma/detalle/"
+        },
+        {
             "name": "Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo",
             "issuer": "Platzi",
             "date": "2024",
@@ -134,7 +160,7 @@ export const profile: Profile = {
             "link": "https://platzi.com/p/alexadictiva/curso/1763-course/diploma/detalle/"
         },
         {
-            "name": "Curso de Closures y Scope en JavaScript 2020",
+            "name": "Curso de closures y ámbito en JavaScript 2020",
             "issuer": "Platzi",
             "date": "2022",
             "link": "https://platzi.com/p/alexadictiva/curso/1807-course/diploma/detalle/"
@@ -146,13 +172,13 @@ export const profile: Profile = {
             "link": "https://platzi.com/p/alexadictiva/curso/2474-course/diploma/detalle/"
         },
         {
-            "name": "Curso de Frontend Developer",
+            "name": "Curso de Desarrollo Frontend",
             "issuer": "Platzi",
             "date": "2022",
             "link": "https://platzi.com/p/alexadictiva/curso/2467-course/diploma/detalle/"
         },
         {
-            "name": "Curso Práctico de Frontend Developer",
+            "name": "Curso Práctico de Desarrollo Frontend",
             "issuer": "Platzi",
             "date": "2022",
             "link": "https://platzi.com/p/alexadictiva/curso/2477-course/diploma/detalle/"
@@ -170,7 +196,7 @@ export const profile: Profile = {
             "link": "https://platzi.com/p/alexadictiva/curso/2393-course/diploma/detalle/"
         },
         {
-            "name": "Curso de Single Page Application con JavaScript Vanilla",
+            "name": "Curso de aplicaciones de una sola página con JavaScript Vanilla",
             "issuer": "Platzi",
             "date": "2021",
             "link": "https://platzi.com/p/alexadictiva/curso/1787-course/diploma/detalle/"
@@ -218,7 +244,7 @@ export const profile: Profile = {
             "link": "https://platzi.com/p/alexadictiva/curso/1989-course/diploma/detalle/"
         },
         {
-            "name": "Curso de Inglés Práctico para Descripciones Personales (2020=",
+            "name": "Curso de Inglés Práctico para Descripciones Personales (2020)",
             "issuer": "Platzi",
             "date": "2021",
             "link": "https://platzi.com/p/alexadictiva/curso/2005-course/diploma/detalle/"
@@ -260,13 +286,13 @@ export const profile: Profile = {
             "link": "https://platzi.com/p/alexadictiva/curso/1961-course/diploma/detalle/"
         },
         {
-            "name": "Curso de Responsive Design: Maquetación Mobile First",
+            "name": "Curso de diseño responsivo: maquetación priorizando dispositivos móviles",
             "issuer": "Platzi",
             "date": "2021",
             "link": "https://platzi.com/p/alexadictiva/curso/2030-course/diploma/detalle/"
         },
         {
-            "name": "Curso de Prework: Configuración de Entorno de Desarrollo en Windows",
+            "name": "Curso de preparación: configuración del entorno de desarrollo en Windows",
             "issuer": "Platzi",
             "date": "2021",
             "link": "https://platzi.com/p/alexadictiva/curso/2042-course/diploma/detalle/"
@@ -326,13 +352,13 @@ export const profile: Profile = {
             "link": "https://platzi.com/p/alexadictiva/curso/1814-course/diploma/detalle/"
         },
         {
-            "name": "Curso de Frontend Developer 2019",
+            "name": "Curso de Desarrollo Frontend 2019",
             "issuer": "Platzi",
             "date": "2020",
             "link": "https://platzi.com/p/alexadictiva/curso/1640-course/diploma/detalle/"
         },
         {
-            "name": "Curso de Prework: Buenas Prácticas y Entorno de Desarrollo en macOS 2019",
+            "name": "Curso de preparación: buenas prácticas y entorno de desarrollo en macOS 2019",
             "issuer": "Platzi",
             "date": "2020",
             "link": "https://platzi.com/p/alexadictiva/curso/1650-course/diploma/detalle/"
@@ -366,8 +392,8 @@ export const profile: Profile = {
     projects: [
         {
             id: "appstore-facturacion",
-            title: "Landing AppStore Facturación Tiendanube",
-            description: "Landing informativa para la App de Facturación en Tiendanube",
+            title: "Página de presentación de Facturación para Tiendanube",
+            description: "Página informativa para la aplicación de facturación en Tiendanube",
             image: "/portfolio_new_edition/images/project-appstore.png",
             stack: ["HTML", "CSS", "JavaScript"],
             demoUrl: "https://www.tiendanube.com/tienda-aplicaciones-nube/ecommapp-facturacion?q=accounting",
@@ -375,8 +401,8 @@ export const profile: Profile = {
         },
         {
             id: "ebook",
-            title: "Ebook Landing Page",
-            description: "Landing informativa para la lanzamiento de Ebook de Ecomm-App",
+            title: "Página de presentación del libro digital",
+            description: "Página informativa para el lanzamiento del libro digital de Ecomm-App",
             image: "/portfolio_new_edition/images/ebook-landing.png",
             stack: ["HTML", "CSS", "JavaScript"],
             demoUrl: "https://www.tiendanube.com/tienda-aplicaciones-nube/ecommapp-facturacion?q=accounting",
@@ -384,8 +410,8 @@ export const profile: Profile = {
         },
         {
             id: "wetrex-landing",
-            title: "Landing Wetrex con Google Sheets",
-            description: "Landing de pauta comercial para Wetrex con formulario conectado a Google Sheets como base de datos",
+            title: "Página de presentación de Wetrex con Google Sheets",
+            description: "Página de pauta comercial para Wetrex con un formulario conectado a Google Sheets como base de datos",
             image: "/portfolio_new_edition/images/project-wetrex.png",
             stack: ["HTML", "CSS", "JavaScript"],
             demoUrl: "https://ecomm-app.com/landing/wetrex.html",
@@ -393,8 +419,8 @@ export const profile: Profile = {
         },
         {
             id: "ecommapp-website",
-            title: "Website Ecomm-App",
-            description: "Sitio web principal de Ecomm-App con accesos al registro y login",
+            title: "Sitio web de Ecomm-App",
+            description: "Sitio web principal de Ecomm-App con accesos al registro y al inicio de sesión",
             image: "/portfolio_new_edition/images/project-ecommapp.png",
             stack: ["HTML", "CSS", "JavaScript"],
             demoUrl: "https://ecomm-app.com/landing/landing.html",
@@ -402,8 +428,8 @@ export const profile: Profile = {
         },
         {
             id: "gigena-landing",
-            title: "Gigena Landing Project",
-            description: "Landing Page para la empresa Gigena",
+            title: "Página de presentación de Gigena",
+            description: "Página de presentación para la empresa Gigena",
             image: "/portfolio_new_edition/images/gigena-landing-project.png",
             stack: ["JavaScript", "Twig", "Scss"],
             demoUrl: "https://alexadictiva.github.io/gigenaLandingProject/",
@@ -412,7 +438,7 @@ export const profile: Profile = {
         {
             id: "12-apostles",
             title: "The 12 Apostles",
-            description: "Website para la empresa The 12 Apostles",
+            description: "Sitio web para la empresa The 12 Apostles",
             image: "/portfolio_new_edition/images/12-apostles-project.png",
             stack: ["HTML", "JavaScript", "Scss"],
             demoUrl: "https://alexadictiva.github.io/gigenaLandingProject/",
@@ -420,18 +446,18 @@ export const profile: Profile = {
         },
         {
             id: "coffee-app",
-            title: "Coffe App",
-            description: "Proyecto personal de PWA sobre una aplicación de café para practicar mis habilidades en JavaScript, HTML y CSS",
+            title: "Aplicación de café",
+            description: "Proyecto personal de PWA sobre una aplicación de café para practicar JavaScript, HTML y CSS",
             image: "/portfolio_new_edition/images/coffe-app-practice.png",
             stack: ["JavaScript", "Vue", "Bootstrap"],
             demoUrl: "https://coffeepwa-dd8f1.web.app/",
             repoUrl: "https://github.com/alexadictiva/coffeeapp",
-            achievements: ["PWA certificada", "Offline functionality", "Interfaz intuitiva"]
+            achievements: ["PWA certificada", "Funcionamiento sin conexión", "Interfaz intuitiva"]
         },
         {
             id: "todo-list",
-            title: "To Do List",
-            description: "Proyecto personal de To Do List para practicar mis habilidades en JavaScript, HTML y CSS",
+            title: "Lista de tareas",
+            description: "Proyecto personal de lista de tareas para practicar JavaScript, HTML y CSS",
             image: "/portfolio_new_edition/images/todo-list-practice.png",
             stack: ["JavaScript", "Vue", "HTML", "Bootstrap"],
             demoUrl: "https://alexadictiva.github.io/todolistvue/",

@@ -1,8 +1,10 @@
 import { useTheme } from '../contexts/ThemeContext';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const ThemeToggle: React.FC = () => {
     const { theme, toggleTheme } = useTheme();
+    const { t } = useLanguage();
 
     return (
         <motion.button
@@ -10,7 +12,7 @@ export const ThemeToggle: React.FC = () => {
             className="relative p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            aria-label={`Cambiar a tema ${theme === 'light' ? 'oscuro' : 'claro'}`}
+            aria-label={theme === 'light' ? t('theme.switchDark') : t('theme.switchLight')}
         >
             {theme === 'light' ? (
                 <motion.svg

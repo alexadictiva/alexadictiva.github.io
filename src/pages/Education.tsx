@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
 import { Section } from '../components/Section';
 import { profile } from '../data/profile';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const Education: React.FC = () => {
+    const { t, translateContent } = useLanguage();
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-0">
-            <Section id="educacion" title="Educación" className="bg-white dark:bg-gray-800">
+            <Section id="educacion" title={t('nav.education')} className="bg-white dark:bg-gray-800">
                 <div className="grid md:grid-cols-2 gap-8">
                     {profile.education.map((edu, index) => (
                         <motion.div
@@ -19,13 +21,13 @@ export const Education: React.FC = () => {
                             <div className="flex items-start justify-between mb-4">
                                 <div className="flex-1">
                                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                                        {edu.degree}
+                                        {translateContent(edu.degree)}
                                     </h3>
                                     <p className="text-lg text-accent font-medium mb-2">
-                                        {edu.institution}
+                                        {translateContent(edu.institution)}
                                     </p>
                                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                                        {edu.year}
+                                        {translateContent(edu.year)}
                                     </p>
                                 </div>
 
@@ -61,7 +63,7 @@ export const Education: React.FC = () => {
 
                             {edu.description && (
                                 <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                                    {edu.description}
+                                    {translateContent(edu.description)}
                                 </p>
                             )}
                         </motion.div>
@@ -77,12 +79,10 @@ export const Education: React.FC = () => {
                     className="mt-12 bg-accent/5 rounded-lg p-8 border border-accent/10"
                 >
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 text-center">
-                        Formación Continua
+                        {t('education.continuous')}
                     </h3>
                     <p className="text-gray-700 dark:text-gray-300 text-center max-w-3xl mx-auto">
-                        Me mantengo constantemente actualizada con las últimas tecnologías y mejores prácticas
-                        del desarrollo web a través de cursos online, conferencias y participación en comunidades
-                        de desarrolladores.
+                        {t('education.description')}
                     </p>
 
                     <div className="grid sm:grid-cols-3 gap-6 mt-8">
@@ -91,7 +91,7 @@ export const Education: React.FC = () => {
                                 +25
                             </div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">
-                                Cursos Completados
+                                {t('education.courses')}
                             </div>
                         </div>
 
@@ -100,7 +100,7 @@ export const Education: React.FC = () => {
                                 +1000h
                             </div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">
-                                Horas de Estudio
+                                {t('education.hours')}
                             </div>
                         </div>
 
@@ -109,7 +109,7 @@ export const Education: React.FC = () => {
                                 +20
                             </div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">
-                                Certificaciones
+                                {t('education.certifications')}
                             </div>
                         </div>
                     </div>

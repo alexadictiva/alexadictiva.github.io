@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Certificate } from '../data/profile';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface CertCardProps {
     certificate: Certificate;
@@ -7,6 +8,7 @@ interface CertCardProps {
 }
 
 export const CertCard: React.FC<CertCardProps> = ({ certificate, index }) => {
+    const { t, translateContent } = useLanguage();
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -19,7 +21,7 @@ export const CertCard: React.FC<CertCardProps> = ({ certificate, index }) => {
                 <div className="flex items-start justify-between mb-4">
                     <div className="flex-1">
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                            {certificate.name}
+                            {translateContent(certificate.name)}
                         </h3>
                         <p className="text-gray-600 dark:text-gray-300 text-sm">
                             {certificate.issuer}
@@ -58,7 +60,7 @@ export const CertCard: React.FC<CertCardProps> = ({ certificate, index }) => {
                             whileTap={{ scale: 0.95 }}
                             className="inline-flex items-center px-3 py-1 text-sm font-medium text-accent bg-accent/10 rounded-full hover:bg-accent/20 transition-colors duration-200"
                         >
-                            Ver certificado
+                            {t('certificates.view')}
                             <svg
                                 className="ml-1 w-4 h-4"
                                 fill="none"

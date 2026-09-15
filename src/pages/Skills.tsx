@@ -4,16 +4,18 @@ import { Section } from '../components/Section';
 import { SkillBadge } from '../components/SkillBadge';
 import { profile } from '../data/profile';
 import { Skill } from '../data/profile';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const Skills: React.FC = () => {
+    const { t } = useLanguage();
     const [selectedCategory, setSelectedCategory] = useState<Skill['category'] | 'all'>('all');
 
     const categories = [
-        { id: 'all', label: 'Todas' },
-        { id: 'frontend', label: 'Frontend' },
-        { id: 'backend', label: 'Backend' },
-        { id: 'languages', label: 'Lenguajes' },
-        { id: 'tools', label: 'Herramientas' }
+        { id: 'all', label: t('skills.all') },
+        { id: 'frontend', label: t('skills.frontend') },
+        { id: 'backend', label: t('skills.backend') },
+        { id: 'tools', label: t('skills.tools') },
+        { id: 'competencies', label: t('skills.competencies') }
     ];
 
     const filteredSkills = selectedCategory === 'all'
@@ -22,7 +24,7 @@ export const Skills: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-0">
-            <Section id="habilidades" title="Habilidades" className="bg-white dark:bg-gray-800">
+            <Section id="habilidades" title={t('nav.skills')} className="bg-white dark:bg-gray-800">
                 {/* Category Filter */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -67,19 +69,19 @@ export const Skills: React.FC = () => {
                 >
                     <div className="text-center">
                         <div className="text-3xl font-bold text-accent mb-2">
-                            {profile.skills.filter(s => s.level === 'expert').length}
+                            {profile.skills.filter(s => s.category === 'frontend').length}
                         </div>
                         <div className="text-gray-600 dark:text-gray-400">
-                            Nivel Experto
+                            {t('skills.frontendCount')}
                         </div>
                     </div>
 
                     <div className="text-center">
                         <div className="text-3xl font-bold text-accent mb-2">
-                            {profile.skills.filter(s => s.level === 'advanced').length}
+                            {profile.skills.filter(s => s.category === 'backend').length}
                         </div>
                         <div className="text-gray-600 dark:text-gray-400">
-                            Nivel Avanzado
+                            {t('skills.backendCount')}
                         </div>
                     </div>
 
@@ -88,7 +90,7 @@ export const Skills: React.FC = () => {
                             {profile.skills.length}
                         </div>
                         <div className="text-gray-600 dark:text-gray-400">
-                            Tecnologías Totales
+                            {t('skills.total')}
                         </div>
                     </div>
                 </motion.div>
