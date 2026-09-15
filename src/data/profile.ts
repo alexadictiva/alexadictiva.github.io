@@ -391,6 +391,15 @@ export const profile: Profile = {
 
     projects: [
         {
+            id: "gestor-gastos",
+            title: "Gestor de gastos",
+            description: "Aplicación web para gestionar gastos personales y con autenticación de usuarios.",
+            image: "/portfolio_new_edition/images/progect-gestor-gastos.png",
+            stack: ["HTML", "CSS", "JavaScript","React", "Supabase", "Tailwind CSS", "AI"],
+            demoUrl: "https://gestor-de-gastos-dusky.vercel.app/",
+            achievements: ["Gestión de gastos", "Autenticación de usuarios", "Diseño responsive"]
+        },
+        {
             id: "appstore-facturacion",
             title: "Página de presentación de Facturación para Tiendanube",
             description: "Página informativa para la aplicación de facturación en Tiendanube",
