@@ -57,16 +57,16 @@ export const profile: Profile = {
         { name: "JavaScript", category: "languages", level: "advanced" },
         { name: "HTML5", category: "frontend", level: "advanced" },
         { name: "CSS3 / SCSS", category: "frontend", level: "advanced" },
-        { name: "jQuery", category: "frontend", level: "advanced" },
         { name: "Git / GitHub", category: "tools", level: "advanced" },
-        { name: "Figma (Dev Mode)", category: "tools", level: "advanced" },
-        { name: "React (básico)", category: "frontend", level: "beginner" },
+        { name: "React", category: "frontend", level: "beginner" },
         { name: "TypeScript", category: "languages", level: "beginner" },
         { name: "TailwindCSS", category: "frontend", level: "beginner" },
-        { name: "Node.js (básico)", category: "backend", level: "beginner" },
-        { name: "SQLite (básico)", category: "backend", level: "beginner" },
-        { name: "Supabase (básico)", category: "backend", level: "beginner" },
-        { name: "Desarrollo asistido por IA", category: "tools", level: "beginner" },
+        { name: "Node.js (en curso)", category: "backend", level: "beginner" },
+        { name: "SQLite", category: "backend", level: "beginner" },
+        { name: "Supabase", category: "backend", level: "beginner" },
+        { name: "Desarrollo asistido por IA", category: "tools", level: "intermediate" },
+        { name: "Figma (Dev Mode)", category: "tools", level: "advanced" },
+        { name: "jQuery", category: "frontend", level: "advanced" },
     ],
 
     education: [
@@ -83,12 +83,6 @@ export const profile: Profile = {
             description: "Formación técnica especializada en desarrollo web y programación"
         },
         {
-            degree: "Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo",
-            institution: "Platzi",
-            year: "2020-2023",
-            description: "Fundamentos de lógica de programación"
-        },
-        {
             degree: "Técnico Superior Administrativo",
             institution: "Instituto Universitario de Tecnología y Administración",
             year: "2009-2013",
@@ -97,6 +91,18 @@ export const profile: Profile = {
     ],
 
     certificates: [
+        {
+            "name": "Aprende SQL desde cero — Curso completo",
+            "issuer": "Midudev",
+            "date": "2026",
+            "link": "https://www.aprendesql.dev/certificado/56528d45-4623-443b-b130-2b14cd254b08"
+        },
+        {
+            "name": "Curso de Supabase",
+            "issuer": "Platzi",
+            "date": "2026",
+            "link": "https://platzi.com/p/alexadictiva/curso/12544-course/diploma/detalle/"
+        },
         {
             "name": "Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo",
             "issuer": "Platzi",
