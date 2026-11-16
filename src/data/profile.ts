@@ -47,7 +47,7 @@ export interface Profile {
 export const profile: Profile = {
     name: "L. Alexandra Pérez",
     role: "Desarrolladora frontend",
-    avatar: "/portfolio_new_edition/images/me.jpg",
+    avatar: "/images/me.jpg",
     about: "Soy desarrolladora frontend con más de 4 años de experiencia en aplicaciones SaaS, apasionada por crear interfaces limpias, escalables y centradas en la experiencia de usuario.",
     email: "l.alexandradev@gmail.com",
     linkedin: "https://www.linkedin.com/in/libiaaperezbdev1/",
@@ -394,7 +394,7 @@ export const profile: Profile = {
             id: "gestor-gastos",
             title: "Gestor de gastos",
             description: "Aplicación web para gestionar gastos personales y con autenticación de usuarios.",
-            image: "/portfolio_new_edition/images/progect-gestor-gastos.png",
+            image: "/images/progect-gestor-gastos.png",
             stack: ["HTML", "CSS", "JavaScript","React", "Supabase", "Tailwind CSS", "AI"],
             demoUrl: "https://gestor-de-gastos-dusky.vercel.app/",
             achievements: ["Gestión de gastos", "Autenticación de usuarios", "Diseño responsive"]
@@ -403,7 +403,7 @@ export const profile: Profile = {
             id: "appstore-facturacion",
             title: "Página de presentación de Facturación para Tiendanube",
             description: "Página informativa para la aplicación de facturación en Tiendanube",
-            image: "/portfolio_new_edition/images/project-appstore.png",
+            image: "/images/project-appstore.png",
             stack: ["HTML", "CSS", "JavaScript"],
             demoUrl: "https://www.tiendanube.com/tienda-aplicaciones-nube/ecommapp-facturacion?q=accounting",
             achievements: ["Integración con Tiendanube", "Diseño responsive", "Optimización SEO"]
@@ -412,7 +412,7 @@ export const profile: Profile = {
             id: "ebook",
             title: "Página de presentación del libro digital",
             description: "Página informativa para el lanzamiento del libro digital de Ecomm-App",
-            image: "/portfolio_new_edition/images/ebook-landing.png",
+            image: "/images/ebook-landing.png",
             stack: ["HTML", "CSS", "JavaScript"],
             demoUrl: "https://www.tiendanube.com/tienda-aplicaciones-nube/ecommapp-facturacion?q=accounting",
             achievements: ["Integración con Tiendanube", "Diseño responsive", "Optimización SEO"]
@@ -421,7 +421,7 @@ export const profile: Profile = {
             id: "wetrex-landing",
             title: "Página de presentación de Wetrex con Google Sheets",
             description: "Página de pauta comercial para Wetrex con un formulario conectado a Google Sheets como base de datos",
-            image: "/portfolio_new_edition/images/project-wetrex.png",
+            image: "/images/project-wetrex.png",
             stack: ["HTML", "CSS", "JavaScript"],
             demoUrl: "https://ecomm-app.com/landing/wetrex.html",
             achievements: ["Integración con Google Sheets", "Formularios dinámicos", "Diseño responsive"]
@@ -430,7 +430,7 @@ export const profile: Profile = {
             id: "ecommapp-website",
             title: "Sitio web de Ecomm-App",
             description: "Sitio web principal de Ecomm-App con accesos al registro y al inicio de sesión",
-            image: "/portfolio_new_edition/images/project-ecommapp.png",
+            image: "/images/project-ecommapp.png",
             stack: ["HTML", "CSS", "JavaScript"],
             demoUrl: "https://ecomm-app.com/landing/landing.html",
             achievements: ["Sistema de autenticación", "Diseño corporativo", "Navegación intuitiva"]
@@ -439,7 +439,7 @@ export const profile: Profile = {
             id: "gigena-landing",
             title: "Página de presentación de Gigena",
             description: "Página de presentación para la empresa Gigena",
-            image: "/portfolio_new_edition/images/gigena-landing-project.png",
+            image: "/images/gigena-landing-project.png",
             stack: ["JavaScript", "Twig", "Scss"],
             demoUrl: "https://alexadictiva.github.io/gigenaLandingProject/",
             achievements: ["Diseño moderno", "Optimización de rendimiento", "Experiencia de usuario mejorada"]
@@ -448,7 +448,7 @@ export const profile: Profile = {
             id: "12-apostles",
             title: "The 12 Apostles",
             description: "Sitio web para la empresa The 12 Apostles",
-            image: "/portfolio_new_edition/images/12-apostles-project.png",
+            image: "/images/12-apostles-project.png",
             stack: ["HTML", "JavaScript", "Scss"],
             demoUrl: "https://alexadictiva.github.io/gigenaLandingProject/",
             achievements: ["Diseño moderno", "Optimización de rendimiento", "Experiencia de usuario mejorada"]
@@ -457,7 +457,7 @@ export const profile: Profile = {
             id: "coffee-app",
             title: "Aplicación de café",
             description: "Proyecto personal de PWA sobre una aplicación de café para practicar JavaScript, HTML y CSS",
-            image: "/portfolio_new_edition/images/coffe-app-practice.png",
+            image: "/images/coffe-app-practice.png",
             stack: ["JavaScript", "Vue", "Bootstrap"],
             demoUrl: "https://coffeepwa-dd8f1.web.app/",
             repoUrl: "https://github.com/alexadictiva/coffeeapp",
@@ -467,7 +467,7 @@ export const profile: Profile = {
             id: "todo-list",
             title: "Lista de tareas",
             description: "Proyecto personal de lista de tareas para practicar JavaScript, HTML y CSS",
-            image: "/portfolio_new_edition/images/todo-list-practice.png",
+            image: "/images/todo-list-practice.png",
             stack: ["JavaScript", "Vue", "HTML", "Bootstrap"],
             demoUrl: "https://alexadictiva.github.io/todolistvue/",
             repoUrl: "https://github.com/alexadictiva/todolistvue",

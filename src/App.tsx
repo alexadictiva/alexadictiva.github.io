@@ -15,7 +15,7 @@ function App() {
     return (
         <ThemeProvider>
             <LanguageProvider>
-                <Router basename="/portfolio_new_edition">
+                <Router>
                     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
                         <TopNav />
                         <main>

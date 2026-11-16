@@ -32,8 +32,8 @@ Un portafolio personal moderno y responsive construido con React, TypeScript, Ta
 
 1. **Clona el repositorio**:
 ```bash
-git clone portfolio_new_edition
-cd portfolio
+git clone https://github.com/alexadictiva/alexadictiva.github.io.git
+cd alexadictiva.github.io
 ```
 
 2. **Instala las dependencias**:
